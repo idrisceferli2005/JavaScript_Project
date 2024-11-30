@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.navbar-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: green;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+}
+
+.handbag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.handbag-img{
+  width: 642px;
+  height: 535px;
+}
+
+.icon{
+  font-size: 50px;
+}
+.delivery{
+text-align: center;
+gap: 10px;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+.card{
+  position: relative;
+}
+
+.card-text{
+  position: absolute;
+  top: 20px;
+}
+.card-products{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cards-mains{
+  display: flex;
+}
+.snobella-title{
+  display: flex;
+
+  gap: 20px;
+}
+
+.right-title li{
+  list-style-type: none;
+}
+
+.footer-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
