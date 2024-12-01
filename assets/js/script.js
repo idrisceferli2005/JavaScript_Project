@@ -1,7 +1,8 @@
+
 document.addEventListener("DOMContentLoaded", async () => {
   let users = JSON.parse(localStorage.getItem("users")) || [];
   const getPoducts = async () => {
-    let response = await axios.get("https://fakestoreapi.com/products");
+    let response = await axios.get('https://api.escuelajs.co/api/v1/products');
     let products = response.data;
     localStorage.setItem("products", JSON.stringify(products)); 
     return products;
@@ -84,7 +85,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       let listItem = document.createElement("li");
       listItem.classList.add("search-result-item");
       listItem.textContent = product.title;
-      // let searchArea = document.querySelector(".search-results")
+  
 
 
       let image = document.createElement("div");
@@ -154,14 +155,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       }, 500);
     });
   }
-
+  let currentIndex = 0;
   function createUserCard(filteredProducts) {
     let currentUser = getCurrentUser();
     const cardsContainer = document.querySelector(".cards");
     cardsContainer.innerHTML = "";
 
     promise().then(() => {
-      filteredProducts.forEach((product) => {
+      filteredProducts.slice(0, 4).forEach((product) => {
         let card = document.createElement("div");
         card.classList.add("card");
 
@@ -232,8 +233,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         ratingStar.textContent = product.rating.rate;
         count.textContent = product.rating.count;
       });
+    
     });
   }
+
+
 
   function toggleAddWishList(productId, heartElement) {
     let currentUser = getCurrentUser();
@@ -313,6 +317,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   }
 
+
   function toast(text) {
     Toastify({
       text: text,
@@ -324,7 +329,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       },
     }).showToast();
   }
+
   updateUserStatus();
   createUserCard(filteredProducts);
   updateBasketCount();
 });
+
+
+
+
+
+
+
+
