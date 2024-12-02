@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
 
         let addToCart = document.createElement("button");
-        addToCart.classList.add("btn", "btn-primary", "add-to-cart");
+        addToCart.classList.add("btn", "btn-light", "add-to-cart");
         addToCart.textContent = "Add Basket";
 
         addToCart.addEventListener("click", (e) => {

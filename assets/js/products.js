@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     let users = JSON.parse(localStorage.getItem("users")) || [];
     const getPoducts = async () => {
-      let response = await axios.get('https://api.escuelajs.co/api/v1/products');
+      let response = await axios.get('https://fakestoreapi.com/products');
       let products = response.data;
       localStorage.setItem("products", JSON.stringify(products)); 
       return products;
