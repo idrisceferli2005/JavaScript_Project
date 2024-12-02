@@ -95,7 +95,6 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: flex-start;
-    background-color: #007878;
   }
   
   .card {
@@ -118,7 +117,7 @@
   
   .card-image img {
     width: 100%;
-    height: 100%;
+    height: 200px;
   }
   
   .card-content {
@@ -153,7 +152,7 @@
   .card-price {
     font-size: 16px;
     font-weight: bold;
-    color: #28a745;
+    color: red;
   }
   
   .card-rating {
@@ -180,6 +179,7 @@
   .add-to-cart {
     margin: 20px;
     text-transform: capitalize;
+    border: 1px solid black;
   }
   
   .search-result{
@@ -294,7 +294,7 @@
     }
 }
 
-/* Control Panel */
+
 .control-panel {
     display: flex;
     justify-content: space-between;
@@ -321,7 +321,7 @@
     padding: 5px 15px;
 }
 
-/* Products Section */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +358,7 @@
     }
 }
 
-/* Footer */
+
 footer {
   
     padding: 20px 0;

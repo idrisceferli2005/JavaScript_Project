@@ -455,3 +455,47 @@ footer .container {
   gap: 80px;
   flex-wrap: wrap;
 }
+
+.sliderContainer{
+  background: #ffe2e0;
+  margin-top: 24px;
+  overflow: hidden;
+  position: relative;
+  height: 630px;
+}
+
+.slides{
+  display: flex;
+}
+
+.slide{
+  min-width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 0px 50px;
+}
+
+.prev, .next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.next{
+  right: 15px;
+}
+.prev{
+  left: 15px;
+}
+.secImg{
+height: 400px;
+}
+.start{
+  display: flex;
+
+
+}

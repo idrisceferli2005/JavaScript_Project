@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           });
   
           let addToCart = document.createElement("button");
-          addToCart.classList.add("btn", "btn-primary", "add-to-cart");
+          addToCart.classList.add("btn", "btn-light", "add-to-cart");
           addToCart.textContent = "Add Basket";
   
           addToCart.addEventListener("click", (e) => {
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           cardsContainer.append(card);
   
           img.src = product.image;
-          cardTitle.textContent = product.title.slice(0, 20) + " ...";
+          cardTitle.textContent = product.title.slice(0, 15) + " ...";
           category.textContent = product.category;
           price.textContent = `$${product.price}`;
           ratingStar.textContent = product.rating.rate;
